@@ -1,0 +1,157 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(../img/background.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font: 20px "Open Sans";
+  color: #EEEEEE;
+}
+body h1 {
+  margin-top: 1.25em;
+}
+body h1 {
+  font-family: "DejaVu Sans";
+  color: white;
+}
+body h1.light {
+  font-family: "DejaVu Sans";
+  font-weight: lighter;
+}
+body h2 {
+  margin-top: 0.5em;
+  margin-bottom: 1.2em;
+}
+body p {
+  margin-bottom: 2em;
+}
+
+.black-box-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.black-box-wrapper .black-box {
+  display: flex;
+  flex-direction: row;
+  max-width: 1600px;
+  min-height: 988.8751px;
+  width: 100%;
+  margin: 50px 50px;
+  overflow: auto;
+  background-color: black;
+  border-radius: 3px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 45px -5px black;
+}
+@media (max-width: 992px) {
+  .black-box-wrapper .black-box {
+    flex-direction: column;
+    min-height: initial;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.black-box-wrapper .black-box .nav-wrapper {
+  width: 300px;
+  margin-left: 50px;
+  flex-shrink: 0;
+}
+@media (max-width: 992px) {
+  .black-box-wrapper .black-box .nav-wrapper {
+    top: 0px;
+    width: initial;
+    height: 100px;
+    margin-left: initial;
+  }
+}
+.black-box-wrapper .black-box .nav-wrapper nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  position: fixed;
+}
+@media (max-width: 992px) {
+  .black-box-wrapper .black-box .nav-wrapper nav {
+    position: initial;
+    height: initial;
+    background-color: black;
+    align-items: center;
+    padding: 20px;
+  }
+  .black-box-wrapper .black-box .nav-wrapper nav.sticky {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+  }
+}
+.black-box-wrapper .black-box .nav-wrapper nav ul.menu {
+  padding: 0px;
+  margin: 0px;
+}
+@media (max-width: 992px) {
+  .black-box-wrapper .black-box .nav-wrapper nav ul.menu {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.black-box-wrapper .black-box .nav-wrapper nav ul.submenu {
+  padding: 0px;
+  margin-left: 2.7em;
+}
+@media (max-width: 992px) {
+  .black-box-wrapper .black-box .nav-wrapper nav ul.submenu {
+    display: none;
+  }
+}
+.black-box-wrapper .black-box .nav-wrapper nav ul.submenu a span {
+  font-size: 2em;
+}
+.black-box-wrapper .black-box .nav-wrapper nav li {
+  display: block;
+}
+.black-box-wrapper .black-box .nav-wrapper nav a {
+  display: inline-flex;
+  align-items: center;
+  font-family: "DejaVu Sans";
+  text-decoration: none;
+  color: white;
+  padding-right: 25px;
+  height: 3em;
+}
+.black-box-wrapper .black-box .nav-wrapper nav a span {
+  font-size: 3em;
+  margin-right: 5px;
+}
+.black-box-wrapper .black-box .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 50px;
+}
+@media (max-width: 992px) {
+  .black-box-wrapper .black-box .content-wrapper {
+    padding: 0px 20px;
+  }
+}
+.black-box-wrapper .black-box .content-wrapper.padded {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.black-box-wrapper .black-box .content-wrapper .webpage-screenshot {
+  width: 100%;
+  padding: 15px 0px 30px 0px;
+  border-radius: 3px;
+}
+.black-box-wrapper .black-box .content-wrapper a {
+  align-self: center;
+  color: white;
+}
+
+/*# sourceMappingURL=screen.css.map */
